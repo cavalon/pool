@@ -52,7 +52,7 @@
     data.addColumn('number', 'Value');
     data.addRows(1);
     chart = new google.visualization.Gauge(document.getElementById('gauge_div'));
-    options = {min: 0, max: 40, width: 240, height: 240, redFrom: 35, redTo: 40, yellowFrom:30, yellowTo: 35, minorTicks: 5};    loadData();
+    options = {min: 0, max: 40, width: 240, height: 240, redFrom: 35, redTo: 40, yellowFrom:30, yellowTo: 35, minorTicks: 10};    loadData();
     // load new data every 15 seconds
     setInterval('loadData()', 15000);
   }
